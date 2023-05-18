@@ -1,5 +1,12 @@
 local fn = vim.fn
 
+function write_to_cursor(text)
+    local pos = vim.api.nvim_win_get_cursor(0)[2]
+    local line = vim.api.nvim_get_current_line()
+    local nline = line:sub(0, pos) .. text .. line:sub(pos + 1)
+    vim.api.nvim_set_current_line(nline)
+end
+
 local M = {}
 
 function M.executable(name)

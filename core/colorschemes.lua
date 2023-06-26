@@ -7,7 +7,8 @@ local M = {}
 -- Colorscheme to its directory name mapping, because colorscheme repo name is not necessarily
 -- the same as the colorscheme name itself.
 M.colorscheme2dir = {
---  onedark = "onedark.nvim",
+--  moonfly = "moonfly"
+  onedark = "onedark.nvim",
 --  edge = "edge",
 --  sonokai = "sonokai",
 --  gruvbox_material = "gruvbox-material",
@@ -17,7 +18,7 @@ M.colorscheme2dir = {
 --  kanagawa = "kanagawa.nvim",
 --  catppuccin = "catppuccin",
 --  rose_pine = "rose-pine",
-  onedarkpro = "onedarkpro.nvim",
+--  onedarkpro = "onedarkpro.nvim",
 --  monokai = "monokai.nvim",
 --  material = "material.nvim",
 }
@@ -114,8 +115,12 @@ M.monokai = function()
 end
 
 M.material = function ()
-  vim.g.material_style = "oceanic"
+  vim.g.material_style = "darker"
   vim.cmd('colorscheme material')
+end
+
+M.moonfly = function ()
+  vim.cmd([[colorscheme moonfly]])
 end
 
 --- Use a random colorscheme from the pre-defined list of colorschemes.
@@ -151,3 +156,4 @@ end
 
 -- Load a random colorscheme
 M.rand_colorscheme()
+

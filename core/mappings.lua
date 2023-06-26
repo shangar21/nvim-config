@@ -12,7 +12,10 @@ keymap.set("i", "<c-u>", "<Esc>viwUea")
 keymap.set("i", "<c-t>", "<Esc>b~lea")
 
 -- Toggle terminal
-keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>")
+keymap.set("n", "<a-i>", "<cmd>ToggleTerm<CR>")
+
+-- Toggle nvim tree
+keymap.set("n", "<A-e>", "<cmd>NvimTreeToggle<CR>" )
 
 -- Toggle telescope
 keymap.set("n", "<leader>T", "<cmd>Telescope<CR>")

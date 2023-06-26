@@ -127,7 +127,8 @@ packer.startup {
 
     -- A list of colorscheme plugin you may want to try. Find what suits you.
     use { "lifepillar/vim-gruvbox8", opt = true }
-    use { "navarasu/onedark.nvim", opt = true }
+    use { "navarasu/onedark.nvim", opt = true, config = [[require('config.onedark')]] }
+    use { "bluz71/vim-moonfly-colors", as = "moonfly" }
     use { "sainnhe/edge", opt = true }
     use { "sainnhe/sonokai", opt = true }
     use { "sainnhe/gruvbox-material", opt = true }
@@ -139,7 +140,7 @@ packer.startup {
     use { "catppuccin/nvim", as = "catppuccin", opt = true }
     use { "kyazdani42/nvim-web-devicons", event = "VimEnter" }
     use({ "rose-pine/neovim", as = 'rose-pine', opt = true })
-    use { "olimorris/onedarkpro.nvim", opt = true }
+    --use { "olimorris/onedarkpro.nvim", opt = true, config=[[require('config.onedarkpro')]]}
     use { "tanvirtin/monokai.nvim", opt = true }
     use { "marko-cerovac/material.nvim", opt = true }
     use { "nvim-tree/nvim-web-devicons", event = "VimEnter" }

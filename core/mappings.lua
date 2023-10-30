@@ -23,6 +23,9 @@ keymap.set("n", "<leader>T", "<cmd>Telescope<CR>")
 -- Toggle amcli
 keymap.set("v", "<leader>lat", ':<C-u>AmcliLatex<CR>')
 
+-- clear highlights
+keymap.set("n", "<ESC><ESC>", "<cmd>noh<CR>")
+
 -- Paste non-linewise text above or below current line, see https://stackoverflow.com/a/1346777/6064933
 keymap.set("n", "<leader>p", "m`o<ESC>p``", { desc = "paste below current line" })
 keymap.set("n", "<leader>P", "m`O<ESC>p``", { desc = "paste above current line" })

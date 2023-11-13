@@ -164,7 +164,8 @@ packer.startup {
     use {
       "lukas-reineke/indent-blankline.nvim",
       event = "VimEnter",
-      config = [[require('config.indent-blankline')]],
+      main = "ibl",
+      opts = {}
     }
 
     -- Highlight URLs inside vim

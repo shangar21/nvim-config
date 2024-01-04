@@ -72,3 +72,6 @@ if exists("g:neovide")
   let g:neovide_cursor_vfx_particle_density=10.0
   let g:neovide_cursor_vfx_opacity=150.0
 endif
+
+vim.opt.number = true
+vim.opt.relativenumber = true
